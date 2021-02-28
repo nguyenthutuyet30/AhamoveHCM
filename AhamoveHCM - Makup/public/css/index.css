@@ -1,0 +1,704 @@
+body, html{
+	height: 100%;
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+/*------------------------------------MENU-----------------------------------*/
+/*div { min-height: 450px; }*/
+div.dark 
+{ 
+	background-color: #fff; 
+	min-height: 50px;
+}
+div.light { background-color: #fff; }
+
+/* Navigation Styles */
+nav { position: relative;  }
+div.dark nav { background-color:rgba(255,255,255,0.5); }
+div.light nav { background-color:rgba(0,0,0,0.5); }
+
+ul.main-nav { 
+	list-style-type: none; 
+	padding: 0px;
+	font-size: 0px;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+ul.main-nav > li { 
+	display: inline-block;
+	padding: 0; 
+}
+
+ul.main-nav > li > a { 
+	display: block; 
+	padding: 20px 30px; 
+	position: relative;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	box-sizing: border-box;
+}
+
+ul.main-nav > li:hover { background-color: #f9f9f9; }
+ul.main-nav > li:hover > a { text-decoration: none; background-color: #fff; }
+
+ul.main-nav > li ul.sub-menu-lists {
+	margin: 0px;
+	padding: 0px;
+	list-style-type : none;
+	display:block;
+}
+
+ul.main-nav > li ul.sub-menu-lists > li {
+	padding: 2px 0;
+}
+
+ul.main-nav > li ul.sub-menu-lists > li > a {
+	font-size: 14px;
+}
+
+.ic {
+	position: fixed; 
+	cursor: pointer;
+	display: inline-block;
+	left: 15px;
+	width: 32px;
+	height: 24px;
+	text-align: center;
+	top:0px;
+	outline: none;
+}
+
+.ic.close { 
+	opacity: 0; 
+	font-size: 0px; 
+	font-weight: 300; 
+	color: #888;
+	top:8px;
+	height:40px;
+	display: block;
+	outline: none;
+}
+
+/* Menu Icons for Devices*/
+.ic.menu 
+{ 
+	position: absolute;
+	transform: translateY(-50%);
+	top:50%; 
+	z-index : 20; 
+}
+
+.ic.menu .line { 
+	height: 4px; 
+	width: 100%; 
+	display: block; 
+	margin-bottom: 6px; 
+}
+.ic.menu .line-last-child { margin-bottom: 0px; }
+
+.sub-menu-head { margin: 10px 0; }
+.banners-area { margin-top: 20px; padding-top: 15px;}
+/*------------------------------------------END MENU TOP -------------------------------------------*/
+
+/*--------------------------------------------- BANNER QUANG CAO ----------------------------------*/
+.baoquatnoidung{
+	/* Hinh anh su dung */
+	background: url('../images/Website_eahamove/baner/Untitled-2-01.png');
+	/* Hinh anh se co kich thuoc co dinh */
+	background-attachment: scroll;
+	/* set cho hinh anh luon o giua trang web */
+	background-position: center;
+	/* Hinh anh bao phu full trang web */
+	background-size: cover;
+	/* Hinh anh k bi lap lai */
+	background-repeat: no-repeat;
+	/* Full chieu cao */
+	height: 100%;
+	position: relative;
+}
+/*BUTTON: TIMHIEUTHEM*/
+.nuttimhieuthem{
+	position: absolute;
+	bottom: 20%;
+	right: 25%;
+	background-color: #f15f22;
+	padding: 20px 60px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+/*--------------------------------------------- END BANNER QUANG CAO ----------------------------*/
+
+/*---------------------------------------------- AHAMOVE PRICE ---------------------------------*/
+.text1{
+	padding-top: 6px;
+	font-size: 40px;
+	color: #F26522;
+	font-weight: bold;
+}
+.text2{
+	font-size: 40px;
+	margin: 30px 0;
+	font-weight: bold;
+	color: #4d4c4d;
+}
+.khungmot p{
+	font-size: 18px;
+	margin-bottom: 50px;
+	text-align: justify;
+	color: #4d4c4d;
+}
+.khungmot img, .khunghai img, .khungba img, .khungbon img{
+	border-radius: 100%;
+	width: 69%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.tieude_khung2{
+	margin-top: 150px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #4d4c4d;
+}
+.khunghai p{
+	font-size: 18px;
+	margin-bottom: 50px;
+	text-align: justify;
+	color: #4d4c4d;
+	margin-top: 30px;
+}
+.tieude_khungba{
+	margin-top: 150px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #4d4c4d;
+}
+.tieude_khungbon{
+	margin-top: 150px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #4d4c4d;
+}
+.khungbon p{
+	font-size: 18px;
+	margin-bottom: 50px;
+	text-align: justify;
+	color: #4d4c4d;
+	margin-top: 30px;
+}
+.nutdkngay a{
+	background: #f15f22;
+	float: right;
+	color: #fff;
+	padding: 8px 25px 5px;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 48px;
+}
+/*---------------------------------------------- END AHAMOVE PRICE -----------------------------*/
+
+/*---------------------------------------------- LOGO DOI TAC -------------------------------------*/
+#logo-doitac{
+	background: #dddddd;
+}
+.tieude-doitac{
+	font-size: 20px;
+	padding-top: 10px;
+	color: #f26522;
+	font-weight: bold;
+	padding-bottom: 14px;
+}
+.item img{
+	border-radius: 50%;
+	box-shadow: 1px 1px 20px -5px grey;
+		
+}
+.item{
+	padding: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+/*------------------------------------------------ END LOGO DOI TAC ---------------------------------*/
+
+/*------------------------------------------------- BANNER QUANG CAO -------------------------------*/
+#app-giaohang{
+	background: url('../images/Website_eahamove/baner_appgiaohang/home-1920rss.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 700px;
+}
+.thoigian-giaohang{
+	color: #FAFAFA;
+}
+.thoigian-giaohang{
+	margin-top: 178px;
+	font-size: 27px;
+	font-weight: bold;
+}
+.thongtintimhieu{
+	margin-top: 36px;
+	margin-bottom: 28px;
+}
+.thongtintimhieu a{
+	font-size: 27px;
+	font-weight: bold;
+	color: #F26522;
+
+}
+.thongtintimhieu a:hover{
+	color: #F26522;
+}
+.dowload span{
+	color: #FAFAFA;
+	font-size: 27px;
+	font-weight: bold;
+	padding: 0px 20px 0px 0px;
+}
+/*------------------------------------------------- END BANNER QUANG CAO ---------------------------*/
+
+/*------------------------------------------------ VE CHUNG TOI ------------------------------------*/
+.tieude-vechungtoi{
+	color: #F26522;
+	font-size: 34px;
+	font-weight: bold;
+	margin: 30px 0px 30px;
+}
+.ykienkhachhang img{
+	border-radius: 50%;
+}
+.tenkh{
+	margin: 10px 0;
+	color: #F26522;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.chucvu{
+	color: #F26522;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.ykienkhachhang p{
+	color: #4D4C4D;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+/*----------------------------------------------- END VE CHUNG TOI ---------------------------------*
+
+/*----------------------------------------------- LIEN HE ------------------------------------------*/
+.custom-formgroup{
+	margin-bottom: 40px;
+}
+#hoten, #sodt, #email, #chonnghanh{
+	font-size: 20px;
+	height: 100%;
+}
+.lienhe{
+	/*Mau sac de len hinh anh*/
+	background-image:  linear-gradient(rgba(4, 4, 4, 0.85),rgba(4 , 4, 4, 0.68), rgba(4, 4, 4, 0.48)), url('../images/Website_eahamove/shipper/delivery-company.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	background-position: center;
+}
+.tieudelienhe{
+	margin-bottom: 50px;
+}
+.tieudelienhe h1{
+	color: #fff;
+}
+.tieudelienhe p{
+	color: #fff;
+	font-size: 20px;
+}
+input#btnxacnhan {
+	width: 100%;
+	padding: 10px 0;
+	background: #f15f22;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	border: none;
+}
+
+/*nut danh dau*/
+/* The container */
+.optionlienhe {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	cursor: pointer;
+	font-size: 20px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-weight: 400;
+	color: #fff;
+}
+
+/* Hide the browser's default radio button */
+.optionlienhe input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+	border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.optionlienhe:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.optionlienhe input:checked ~ .checkmark {
+	background-color: #f26522;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.optionlienhe input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.optionlienhe .checkmark:after {
+	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+/*----------------------------------------------- END LIEN HE! -------------------------------------*/
+
+/*----------------------------------------------- FOOTER ------------------------------------------*/
+#footer{
+	background: #16254C;
+	padding-top: 30px;
+}
+.diachi-dichvu img{
+	width: 286px;
+}
+.map{
+	background: url('../images/Website_eahamove/ico/fb1-map.png') 0 5px no-repeat;
+}
+.diachi-dichvu ul li{
+	padding: 0 0 20px 40px;
+	list-style: none;
+}
+.mail{
+	background: url('../images/Website_eahamove/ico/fb1-mail.png') 0 5px no-repeat;
+}
+.phone{
+	background: url('../images/Website_eahamove/ico/fb1-phone.png') 0 5px no-repeat;
+}
+.tieude-dichvu{
+	font-size: 20px;
+	color: #F26522;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.dichvu p{
+	font-size: 14px;
+	color: #fff;
+}
+.luachonnhanh{
+	color: #fff;
+}
+.logo-dangky img{
+	width: 121px;
+	height: 39px;	
+}
+.tieude-ketnoi{
+	font-size: 20px;
+	color: #F26522;
+	font-weight: bold;
+}
+.lienket-ketnoi img{
+	height: 30px;
+}
+.ketnoi{
+	border-top: 1px solid #74738d;
+    border-bottom: 1px solid #74738d;
+    padding: 20px 0;
+}
+.tencongty{
+	color: #fff;
+}
+.scommerce img{
+	padding: 20px 0;
+}
+.bangdiachi li a{
+	color: #fff;
+}
+.tieude-luachon{
+	font-size: 20px;
+	color: #F26522;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.luachonnhanh p a{
+	color: #fff;
+}
+.logo-dangky a img{
+	margin-top: 10px;
+}
+.tieude-ketnoi{
+	margin-bottom: 10px;
+}
+.tencongty {
+	margin: 20px;
+}
+/*----------------------------------------------- END FOOTER ---------------------------------------*/
+
+/*CHE DO DI DONG (MAX-WITH: 768PX)*/
+@media (max-width:768px) {
+	/*BUTTON: TIM HIEU THEM*/
+	.nuttimhieuthem {
+	    position: absolute;
+	    bottom: 60px;
+	    right: 13%;
+	    background-color: #f15f22;
+	    padding: 15px 45px;
+	    color: #fff;
+	    font-weight: bold;
+	    font-size: 20px;
+	    text-transform: uppercase;
+	    cursor: pointer;
+	}
+	/*END BUTTON TIM HIEU THEM*/
+	.menu{
+	    left: 0;
+	    right: 0;
+	}
+	/*code cua tui*/
+	.navigation img {
+		width: 150px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		padding: 10px 0;
+		position: relative;
+	}
+	.sub-menu-head { color:orange; }
+	.ic.menu { display: block; }
+	div.dark .ic.menu .line { background-color: #888; } 
+	div.light .ic.menu .line { background-color: #000; }
+	.ic.menu .line {
+		-webkit-transition: all 0.4s ease 0s;
+		-o-transition: all 0.4s ease 0s;
+		transition: all 0.4s ease 0s;
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+		-webkit-transform-origin: center center;
+		-ms-transform-origin: center center;
+		transform-origin: center center;
+	}
+	.ic.menu:focus .line { background-color: #fff !important; }
+
+	.ic.menu:focus .line:nth-child(1) { 
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg); 
+	}
+
+	.ic.menu:focus .line:nth-child(2) { 
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		transform: rotate(-45deg); 
+		margin-top: -10px;
+	}
+
+	.ic.menu:focus .line:nth-child(3) {
+		transform: translateY(15px);
+		opacity: 0;
+	}
+
+	.ic.menu:focus{ outline: none; }
+	.ic.menu:focus ~ .ic.close { opacity: 1; z-index : 21;  outline: none; }
+
+/*
+
+.ic.menu:focus ~ .ic.close { opacity: 1.0; z-index : 21;  }
+.ic.close:focus { opacity: 0; }
+*/
+.ic.menu:hover, 
+.ic.menu:focus { opacity: 1; }
+
+
+nav { background-color: transparent; }
+
+/* Main Menu for Handheld Devices  */
+ul.main-nav {
+	z-index:2; 
+	padding: 50px 0;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	background-color:#fff;
+	height: 100%;
+	overflow: auto;
+	/*CSS animation applied : Slide from Right*/
+	-webkit-transition-property: background, width;
+	-moz-transition-property: background, width;
+	-o-transition-property: background, width;
+	transition-property: background, width;
+	-webkit-transition-duration: 0.6s;
+	-moz-transition-duration: 0.6s;
+	-o-transition-duration: 0.6s;
+	transition-duration: 0.6s;
+}
+
+.ic.menu:focus ~ .main-nav { width: 300px; background-color:#f15f22; }
+.ic.menu:focus ~ .main-nav > * {opacity: 1;}
+ul.main-nav > * { 
+	-webkit-transition-property: opacity;
+	-moz-transition-property: opacity;
+	-o-transition-property: opacity;
+	transition-property: opacity;
+	-webkit-transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	opacity: 0;
+}
+
+
+ul.main-nav > li > a:after {display: none;}
+ul.main-nav > li:first-child { border-radius: 0px; }
+ul.main-nav > li {
+	display: block;
+	border-bottom: 1px solid #fff;
+}
+
+ul.main-nav > li > a { font-weight: 600;}
+
+ul.main-nav > li ul.sub-menu-lists > li a { color: #eee; font-size: 14px; }
+.sub-menu-head { font-size: 16px;}
+ul.main-nav > li:hover { background-color: transparent;  }
+ul.main-nav > li:hover > a {color: #fff; text-decoration: none; font-weight: 600;}
+
+.banners-area { padding-bottom: 0px;  }
+.banners-area div { margin-bottom: 15px;  }
+.banners-area { border-top: 1px solid #444; }
+}
+/*----------------------------------*/
+
+/*CHE DO MAN HINH MAY TINH (MIN-WITH: 768PX)*/
+@media (min-width:768px) {
+	.ic.menu { display: none; }
+	/* Main Menu for Desktop Devices  */
+	ul.main-nav { display: block; position: relative; float: left; } /*chinh: float:left*/
+
+
+	/* Sub Menu */
+	ul.main-nav > li > div{ 
+		visibility: hidden;
+		background-color: #f9f9f9;
+		position: absolute;
+		margin-top: 0px;
+		width: 100%;
+		color: #333;
+		left: 0;
+		box-sizing: border-box;
+		z-index : 3;
+		font-size: 16px;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		opacity: 0;
+
+		-ms-transform: rotateX(90deg);
+		transform: rotateX(90deg);
+		-webkit-transform-origin: top center;
+		-ms-transform-origin: top center;
+		transform-origin: top center;
+
+	}
+	ul.main-nav > li > a { color: #f15f22; font-weight: bold;}
+	ul.main-nav > li > .active{color: #1D50AA;} /*Them mau cho lop active*/
+	ul.main-nav > li:hover > div{ 
+		visibility: visible;
+		opacity: 1;
+		-webkit-transform: rotateX(0deg);
+		-moz-transform: rotateX(0deg);
+		-ms-transform: rotateX(0deg);
+		transform: rotateX(0deg);
+	}
+
+	ul.main-nav > li > div> * {
+		-webkit-transition-property: opacity;
+		-moz-transition-property: opacity;
+		-o-transition-property: opacity;
+		transition-property: opacity;
+		-webkit-transition-duration: 0.4s;
+		-moz-transition-duration: 0.4s;
+		-o-transition-duration: 0.4s;
+		transition-duration: 0.4s;
+		opacity: 0;
+	}
+
+	ul.main-nav > li:hover > div > * {
+		opacity: 1;
+	}
+	ul.main-nav > li > a:hover { text-decoration: none; background-color: #fff; color: #1D50AA; font-weight: bold; cursor: pointer; }
+	.sub-menu-head { font-size: 20px;}
+
+	/* List Separator: Outer Border */
+	div.dark ul.main-nav > li > a { text-decoration: none; }
+	div.light ul.main-nav > li > a { border-right: 1px solid #666; }
+
+	div.dark ul.main-nav > li > a:after { background-color: #777; }
+	div.light ul.main-nav > li > a:after { background-color: #999; }
+
+	.banners-area { border-top: 1px solid #ccc; }
+
+	/*Hinh logo*/
+	/*Chinh float: left; display:inline-block*/
+	.navigation img {
+		display: inline-block;
+		float: left;
+	}
+}
+/*------------------------------------------*/
+.menu-fixed {
+	background-color: #fff; 
+	left: 0;
+    right: 0;
+	position: fixed;
+	z-index: 2000;
+}
